@@ -20,69 +20,47 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-purple">
-            <div class="container-fluid">
-               <a class="navbar-brand" href="#">SKAR'S</a>
-              <div class="navbar-dark">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              </div>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0" >
-                  <li class="nav-item col-6 col-md-auto">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item col-6 col-md-auto">
-                    <div class="dropdown">
-                      <button class="btn dropdown" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="true">
-                        Women Apparels
-                        <span></span><i class="fa-solid fa-angle-down"></i></span>
-                      </button>
-                      <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton2" style="display:auto; top: 2.5px;">
-                        <li><a class="dropdown-item " href="#">Clothing</a></li>
-                        <li><a class="dropdown-item " href="#">Bags</a></li>
-                        <li><a class="dropdown-item " href="#">Makeup</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item " href="#">Jewelery</a></li>
-                        <li><a class="dropdown-item " href="#">Perfumes</a></li>
-                        <li><a class="dropdown-item " href="#">Accessesories</a></li>
-                        <li><a class="dropdown-item " href="#">watches</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="nav-item col-6 col-md-auto">
-                    <div class="dropdown">
-                      <button class="btn dropdown" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="true">
-                        Men Apparels
-                        <span></span><i class="fa-solid fa-angle-down"></i></span>
-                      </button>
-                      <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton2">
-                        <li><a class="dropdown-item " href="#">Clothing</a></li>
-                        <li><a class="dropdown-item " href="#">Bags</a></li>
-                        <li><a class="dropdown-item " href="#">Sunglasses</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item " href="#">Jewelery</a></li>
-                        <li><a class="dropdown-item " href="#">Perfumes</a></li>
-                        <li><a class="dropdown-item " href="#">Accessesories</a></li>
-                        <li><a class="dropdown-item " href="#">Watches</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="nav-item col-6 col-md-auto">
-                    <a class="nav-link active" href="#">Kids</a>
-                  </li>
-                  <li class="nav-item col-6 col-md-auto">
-                    <a class="nav-link active" href="#">Cart</a>
-                  </li>
-                  <li class="nav-item col-6 col-md-auto">
-                    <a class="nav-link active" href="#">LogIn</a>
-                  </li>
-                </ul>
-                <hr class="d-md-none text-white-50">
-                  </div>
-            </div>
-          </nav> 
+        <nav class="navbar navbar-dark bg-purple fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end bg-purple" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-dark" type="submit">Search</button>
+        </form>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu dropdown-menu-light">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+       
+      </div>
+    </div>
+  </div>
+</nav>
     </header>
     
     <article>
@@ -112,7 +90,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images\lehenga.jpg" class="d-block w-100 " alt="footwear">
+            <img src="images/lehenga.jpg" class="d-block w-100 " alt="footwear">
             <div class="carousel-caption d-none d-md-block">
               <h3>Traditional Wears</h3>
               <p>Designer Lehengas And Much more. </p>
@@ -151,14 +129,144 @@
       </div>
   </section> 
 
-	<div class="bodyimg">
-	<img src="images/background.png">
-	
-	</div>
+	<div class="parallax"></div>
+<div section class="card-bg">
+<div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title"><a href="#" class="title">Lingerie & Sleepware</a></h5>
+   <img src="images/lingerie.jpg" class="card-img" alt="lingerie">
+   <p>Exclusive Brands</p>
+    <a href="#" class="btn btn-primary">BUY NOW</a>
+  </div>
+</div>
+
+<div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title"><a href="#" class="title">Men's Shorts</a></h5>
+    <img src="images/mens-shorts.jpg" class="card-img" alt="shorts">
+	 <p>Latest Brands</p>
+    <a href="#" class="btn btn-primary">BUY NOW</a>
+  </div>
+</div>
+
+<div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title"><a href="#" class="title">Sunglasses</a></h5>
+     <img src="images/sunglasses.jpg" class="card-img" alt="sunglasses">
+	 <p>Trending Frames</p>
+    <a href="#" class="btn btn-primary">BUY NOW</a>
+  </div>
+</div>
+
+<div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title"><a href="#" class="title">Mens's Formals</a></h5>
+	<img src="images/mens formals.jpg" class="card-img" alt="formals">   
+	<p>Quality Assured</p>
+	<a href="#" class="btn btn-primary">BUY NOW</a>
+  </div>
+</div>
+
+<div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title"><a href="#" class="title">Grooming Kit's</a></h5>
+    <img src="images/groomkit.jpg" class="card-img" alt="kits">
+	<p>Stay In Stlye</p>
+    <a href="#" class="btn btn-primary">BUY NOW</a>
+  </div>
+</div>
+
+<div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title"><a href="#" class="title">Men's Casuals</a></h5>
+    <img src="images/Menscasuals.jpg" class="card-img" alt="casuals">
+	<p>Grab Offer's Now</p>
+    <a href="#" class="btn btn-primary">BUY NOW</a>
+  </div>
+</div>
+
+<div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title"><a href="#" class="title">Men's Watch</a></h5>
+    <img src="images/menswatches.jpg" class="card-img" alt="watches">
+	<p>Luxuries Quartz</p>
+    <a href="#" class="btn btn-primary">BUY NOW</a>
+  </div>
+</div>
+
+<div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title"><a href="#" class="title">Men's Footware</a></h5>
+    <img src="images/footware.jpg" class="card-img" alt="footware">
+	<p>Sports Wear</p>
+    <a href="#" class="btn btn-primary">BUY NOW</a>
+  </div>
+</div>
+
+<div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title"><a href="#" class="title">Women's Fashion</a></h5>
+    <img src="images/womensfashion.jpg" class="card-img" alt="footware">
+	<p>Designer Clothing</p>
+    <a href="#" class="btn btn-primary">BUY NOW</a>
+  </div>
+</div>
+
+<div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title"><a href="#" class="title">Women's Bags</a></h5>
+    <img src="images/bags.jpg" class="card-img" alt="footware">
+	<p>Bags For Every Occasions<p>
+    <a href="#" class="btn btn-primary">BUY NOW</a>
+  </div>
+</div>
+
+<div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title"><a href="#" class="title">Jewellery</a></h5>
+    <img src="images/jewellery.jpg" class="card-img" alt="footware">
+	<p>Rare Designs & Stones</p>
+    <a href="#" class="btn btn-primary">BUY NOW</a>
+  </div>
+</div>
+
+<div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title"><a href="#" class="title">Make-Up & Perfumes</a></h5>
+    <img src="images/beautyproducts.jpg" class="card-img" alt="footware">
+	<p>Best Beauty Brands</p>
+    <a href="#" class="btn btn-primary">BUY NOW</a>
+  </div>
+</div>
+</div>
+<div class="parallax"></div>
 
     
 <footer>
-
+	<div class="footer">
+	<table border="0" width="100%">
+		<tr>
+		<td width="50%"><img src="images/click.gif">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">About</a></td>
+		<td><img src="images/support.gif">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Contact</a></td>
+		</tr>
+		<tr>
+		<td><img src="images/google-maps.gif">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Registered Office Address</br><i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Room no.123, XYZ, Mumbai, Maharashtra 400000.</i></td>
+		<td><img src="images/notebook.gif">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Privacy Policy</a></td>
+		</tr>
+		<tr>
+		<td><img src="images/message.gif">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">emailme@gmail.com</a></td>
+		<td><img src="images/speech-bubble.gif">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">FAQ</a></td>
+		</tr>
+		<tr>
+		<td><img src="images/shield.gif">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">© 2022 Rights Reserved</a></td>
+		<td><img src="images/alarm.gif">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Terms & Conditions</a></td>
+		</tr>
+		<tr>
+		<td ><a href="#"><img src="images/instagram.png"></a>&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/facebook.png"></a>&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/twitter.png"></a>&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/whatsapp.png"></a></td>
+		</tr>
+		
+	</table>
+	</div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
